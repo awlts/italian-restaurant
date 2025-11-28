@@ -61,9 +61,38 @@ img {
 
 .logo {
     font-family: var(--font-accent);
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--primary-color);
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: 0.05em;
+    text-shadow: 1px 1px 0 rgba(212, 175, 55, 0.3);
+}
+
+.logo-icon {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #009246 33.3%, #ffffff 33.3%, #ffffff 66.6%, #ce2b37 66.6%);
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.logo-icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.8;
 }
 
 .nav-list {
@@ -372,13 +401,10 @@ img {
 }
 
 /* Access Section */
-.access-content {
-    display: flex;
-    gap: 4rem;
-}
-
 .access-info {
-    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .access-info h3 {
@@ -393,23 +419,18 @@ img {
     display: grid;
     grid-template-columns: 100px 1fr;
     gap: 1rem;
+    text-align: left;
 }
 
 .access-info dt {
     font-weight: bold;
     color: var(--primary-color);
+    text-align: right;
 }
 
 .access-info a {
     color: var(--text-color);
     text-decoration: underline;
-}
-
-.access-map {
-    flex: 1;
-    height: 300px;
-    border-radius: 8px;
-    overflow: hidden;
 }
 
 /* Footer */
@@ -473,8 +494,7 @@ img {
 
     .concept-content,
     .feature-item,
-    .feature-item.reverse,
-    .access-content {
+    .feature-item.reverse {
         flex-direction: column;
         gap: 2rem;
     }
@@ -486,4 +506,37 @@ img {
     .menu-card.featured:hover {
         transform: translateY(-10px);
     }
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-5px);
 }
