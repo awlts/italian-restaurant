@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | イタリアン CIT</title>
+    <meta name="description" content="イタリアン CITのコースメニュー。カジュアルからプレミアムまで、シーンに合わせた3つのコースをご用意しております。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" style="text-decoration: none;">
+                <h1 class="logo"><span class="logo-icon"></span>CIT</h1>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Top</a></li>
+                    <li class="nav-item"><a href="concept.html">Concept</a></li>
+                    <li class="nav-item"><a href="menu.html" class="active">Menu</a></li>
+                    <li class="nav-item"><a href="access.html">Access</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h2 class="page-title">Course Menu</h2>
+        </div>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section menu">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Course Menu</h2>
+                    <p class="section-subtitle">コスパ最高のコースメニュー</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="2025素材/パテドカンパーニュ.jpg" alt="カジュアルコース">
+                        </div>
+                        <div class="menu-details">
+                            <h3>カジュアルコース</h3>
+                            <p class="price">2,980円</p>
+                            <p class="description">気軽にお楽しみいただけるリーズナブルなコースです。</p>
+                        </div>
+                    </div>
+                    <div class="menu-card featured">
+                        <div class="menu-image">
+                            <img src="2025素材/国産牛ステーキ.jpg" alt="スタンダードコース">
+                        </div>
+                        <div class="menu-details">
+                            <h3>スタンダードコース</h3>
+                            <p class="price">3,980円</p>
+                            <p class="description">当店一番人気！バランスの取れた満足コース。</p>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-image">
+                            <img src="2025素材/国産牛ステーキ(イチボ).jpg" alt="プレミアムコース">
+                        </div>
+                        <div class="menu-details">
+                            <h3>プレミアムコース</h3>
+                            <p class="price">5,980円</p>
+                            <p class="description">特別な日に。厳選食材を使用した贅沢なコース。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top" aria-label="トップへ戻る">
+        ↑
+    </button>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; 2025 Italian CIT. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
