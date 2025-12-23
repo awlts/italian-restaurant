@@ -1,24 +1,26 @@
+const baseUrl = import.meta.env.BASE_URL
+
 function Menu() {
   const courses = [
     {
       name: 'カジュアルコース',
       price: '2,980円',
       description: '気軽にお楽しみいただけるリーズナブルなコースです。',
-      image: '/assets/images/パテドカンパーニュ.jpg',
+      image: `${baseUrl}assets/images/パテドカンパーニュ.jpg`,
       featured: false
     },
     {
       name: 'スタンダードコース',
       price: '3,980円',
       description: '当店一番人気！バランスの取れた満足コース。',
-      image: '/assets/images/国産牛ステーキ.jpg',
+      image: `${baseUrl}assets/images/国産牛ステーキ.jpg`,
       featured: true
     },
     {
       name: 'プレミアムコース',
       price: '5,980円',
       description: '特別な日に。厳選食材を使用した贅沢なコース。',
-      image: '/assets/images/国産牛ステーキ(イチボ).jpg',
+      image: `${baseUrl}assets/images/国産牛ステーキ(イチボ).jpg`,
       featured: false
     }
   ]
@@ -63,8 +65,8 @@ function Menu() {
             <p className="section-subtitle">シェフが心を込めて作る料理をご覧ください</p>
           </div>
           <div className="video-wrapper">
-            <video controls poster="/assets/images/パスタ.jpg">
-              <source src="/assets/videos/パスタ.mp4" type="video/mp4" />
+            <video controls poster={`${baseUrl}assets/images/パスタ.jpg`}>
+              <source src={`${baseUrl}assets/videos/パスタ.mp4`} type="video/mp4" />
               お使いのブラウザは動画再生に対応していません。
             </video>
           </div>

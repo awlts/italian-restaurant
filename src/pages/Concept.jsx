@@ -1,34 +1,36 @@
+const baseUrl = import.meta.env.BASE_URL
+
 function Concept() {
   const features = [
     {
       number: '01',
       title: '豊富な日替わりメニュー',
       description: '旬の美味しいお野菜、魚、お肉で美味しい料理を提供しております。毎日変わるおすすめメニューも大人気です。ワインと一緒にお楽しみ下さい。',
-      image: '/assets/images/こだわり1 (2).jpg'
+      image: `${baseUrl}assets/images/こだわり1 (2).jpg`
     },
     {
       number: '02',
       title: '気軽に立ち寄れるワイン酒場',
       description: 'ワインに合わせたリーズナブルで美味しいアラカルトメニューも豊富です！！オーナーが美味しいと思うワインを取り揃えてます。お気軽にふらっとお立ち寄り下さいね。',
-      image: '/assets/images/こだわり2.jpg'
+      image: `${baseUrl}assets/images/こだわり2.jpg`
     },
     {
       number: '03',
       title: '美味しいパーティーコース',
       description: 'お得なコースメニューは2980円から3種類ございます。飲み放題付きコースも人気です。女子会、お仲間とのご宴会におすすめです。',
-      image: '/assets/images/こだわり3コース料理.jpg'
+      image: `${baseUrl}assets/images/こだわり3コース料理.jpg`
     },
     {
       number: '04',
       title: 'リーズナブルな日替わりグラスワイン',
       description: 'コスパ最高の美味しいワインを取り揃えております。日替わりグラスワインは580円〜美味しいワインを気軽にお楽しみください。',
-      image: '/assets/images/こだわり2または4.jpg'
+      image: `${baseUrl}assets/images/こだわり2または4.jpg`
     },
     {
       number: '05',
       title: '絶品！！CHEESE',
       description: 'ワインとチーズをお楽しみください。オーナーシェフが厳選した絶品チーズを使ったメニューも人気です。',
-      image: '/assets/images/こだわり5チーズ料理.jpg'
+      image: `${baseUrl}assets/images/こだわり5チーズ料理.jpg`
     }
   ]
 
@@ -48,7 +50,7 @@ function Concept() {
           
           <div className="feature-item">
             <div className="feature-image">
-              <img src="/assets/images/内装2.jpg" alt="居心地の良い店内" />
+              <img src={`${baseUrl}assets/images/内装2.jpg`} alt="居心地の良い店内" />
             </div>
             <div className="feature-content">
               <h3>居心地の良い店内</h3>

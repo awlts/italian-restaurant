@@ -1,3 +1,5 @@
+const baseUrl = import.meta.env.BASE_URL
+
 function Access() {
   return (
     <>
@@ -34,7 +36,7 @@ function Access() {
 
           {/* Store Image */}
           <div style={{ maxWidth: '600px', margin: '3rem auto 0', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}>
-            <img src="/assets/images/外観.jpg" alt="店舗外観" style={{ width: '100%', display: 'block' }} />
+            <img src={`${baseUrl}assets/images/外観.jpg`} alt="店舗外観" style={{ width: '100%', display: 'block' }} />
           </div>
         </div>
       </section>

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+const baseUrl = import.meta.env.BASE_URL
+
 function Home() {
   return (
     <>
@@ -11,9 +13,9 @@ function Home() {
           muted 
           loop 
           playsInline
-          poster="/assets/images/ワインと人気メニュー.jpg"
+          poster={`${baseUrl}assets/images/ワインと人気メニュー.jpg`}
         >
-          <source src="/assets/videos/ワイン.mp4" type="video/mp4" />
+          <source src={`${baseUrl}assets/videos/ワイン.mp4`} type="video/mp4" />
         </video>
         <div className="hero-overlay"></div>
         <div className="hero-content">
@@ -30,7 +32,7 @@ function Home() {
             <Link to="/concept" className="link-card">
               <div className="card">
                 <div className="card-image-wrapper">
-                  <img src="/assets/images/内装1.jpg" alt="Concept" className="card-image" />
+                  <img src={`${baseUrl}assets/images/内装1.jpg`} alt="Concept" className="card-image" />
                 </div>
                 <div className="card-content">
                   <h3 className="card-title">Concept & Features</h3>
@@ -43,7 +45,7 @@ function Home() {
             <Link to="/menu" className="link-card">
               <div className="card">
                 <div className="card-image-wrapper">
-                  <img src="/assets/images/こだわり3コース料理.jpg" alt="Menu" className="card-image" />
+                  <img src={`${baseUrl}assets/images/こだわり3コース料理.jpg`} alt="Menu" className="card-image" />
                 </div>
                 <div className="card-content">
                   <h3 className="card-title">Menu</h3>
@@ -56,7 +58,7 @@ function Home() {
             <Link to="/access" className="link-card">
               <div className="card">
                 <div className="card-image-wrapper">
-                  <img src="/assets/images/外観.jpg" alt="Access" className="card-image" />
+                  <img src={`${baseUrl}assets/images/外観.jpg`} alt="Access" className="card-image" />
                 </div>
                 <div className="card-content">
                   <h3 className="card-title">Access</h3>
@@ -77,7 +79,7 @@ function Home() {
             <p className="section-subtitle">厳選されたワインと共に、特別なひとときを</p>
           </div>
           <div className="gif-container">
-            <img src="/assets/images/wine_animation.gif" alt="ワインアニメーション" />
+            <img src={`${baseUrl}assets/images/wine_animation.gif`} alt="ワインアニメーション" />
           </div>
         </div>
       </section>
