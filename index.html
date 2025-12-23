@@ -1,102 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>イタリアン CIT (シーアイティ) | 奈良氏之市都田沼</title>
-    <meta name="description" content="都田沼駅徒歩2分。幸せを呼ぶワインと国産牛肉とチーズの美味しいお店「イタリアン CIT」。普段使いの気取らない贅沢を。">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>イタリアン CIT | 奈良氏之市都田沼</title>
+    <meta name="description" content="都田沼駅徒歩2分。幸せを呼ぶワインと国産牛肉とチーズの美味しいお店「イタリアン CIT」。" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header-inner">
-            <a href="index.html" style="text-decoration: none;">
-                <h1 class="logo"><span class="logo-icon"></span>CIT</h1>
-            </a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html" class="active">Top</a></li>
-                    <li class="nav-item"><a href="concept.html">Concept</a></li>
-                    <li class="nav-item"><a href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a href="access.html">Access</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger" aria-label="メニューを開く">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-media">
-                <video autoplay muted loop playsinline poster="2025素材/ワインと人気メニュー.jpg">
-                    <source src="2025素材/ワイン.mp4" type="video/mp4">
-                </video>
-                <div class="hero-overlay"></div>
-            </div>
-            <div class="hero-content">
-                <h2 class="hero-title">Italian CIT</h2>
-                <p class="hero-subtitle">普段使いの気取らない贅沢しませんか？</p>
-                <p class="hero-text">幸せを呼ぶ…ワインと国産牛肉とチーズの美味しいお店</p>
-            </div>
-        </section>
-
-        <!-- Navigation Links Section -->
-        <section class="section home-links">
-            <div class="container">
-                <div class="home-links-grid">
-                    <a href="concept.html" class="home-link-card">
-                        <div class="home-link-image">
-                            <img src="2025素材/内装1.jpg" alt="Concept">
-                        </div>
-                        <div class="home-link-content">
-                            <h3>Concept & Features</h3>
-                            <p>お店のコンセプトと5つのこだわり</p>
-                            <span class="arrow">→</span>
-                        </div>
-                    </a>
-                    <a href="menu.html" class="home-link-card">
-                        <div class="home-link-image">
-                            <img src="2025素材/こだわり3コース料理.jpg" alt="Menu">
-                        </div>
-                        <div class="home-link-content">
-                            <h3>Menu</h3>
-                            <p>コスパ最高のコースメニュー</p>
-                            <span class="arrow">→</span>
-                        </div>
-                    </a>
-                    <a href="access.html" class="home-link-card">
-                        <div class="home-link-image">
-                            <img src="2025素材/外観.jpg" alt="Access">
-                        </div>
-                        <div class="home-link-content">
-                            <h3>Access</h3>
-                            <p>店舗情報・アクセス</p>
-                            <span class="arrow">→</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <button id="backToTop" class="back-to-top" aria-label="トップへ戻る">
-        ↑
-    </button>
-
-    <footer class="footer">
-        <div class="container">
-            <p class="copyright">&copy; 2025 Italian CIT. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

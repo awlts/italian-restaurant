@@ -95,6 +95,26 @@ img {
     opacity: 0.8;
 }
 
+/* Bootstrap Navbar Logo Icon */
+.navbar .logo-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar .logo-icon::after {
+    width: 18px;
+    height: 18px;
+}
+
+/* Audio Player */
+.audio-player {
+    z-index: 1050;
+}
+
+.audio-player .form-range {
+    cursor: pointer;
+}
+
 .nav-list {
     display: flex;
     gap: 2rem;

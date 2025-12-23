@@ -5,75 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | イタリアン CIT</title>
     <meta name="description" content="イタリアン CITのコースメニュー。カジュアルからプレミアムまで、シーンに合わせた3つのコースをご用意しております。">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <a href="index.html" style="text-decoration: none;">
-                <h1 class="logo"><span class="logo-icon"></span>CIT</h1>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="logo-icon me-2"></span>
+                <span class="fw-bold" style="font-family: 'Playfair Display', serif; font-size: 1.5rem;">CIT</span>
             </a>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html">Top</a></li>
-                    <li class="nav-item"><a href="concept.html">Concept</a></li>
-                    <li class="nav-item"><a href="menu.html" class="active">Menu</a></li>
-                    <li class="nav-item"><a href="access.html">Access</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger" aria-label="メニューを開く">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="concept.html">Concept</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="access.html">Access</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
+    <main style="padding-top: 70px;">
         <div class="page-header">
             <h2 class="page-title">Course Menu</h2>
         </div>
 
         <!-- Menu Section -->
-        <section id="menu" class="section menu">
+        <section id="menu" class="section py-5">
             <div class="container">
-                <div class="section-header">
+                <div class="text-center mb-5">
                     <h2 class="section-title">Course Menu</h2>
                     <p class="section-subtitle">コスパ最高のコースメニュー</p>
                 </div>
-                <div class="menu-grid">
-                    <div class="menu-card">
-                        <div class="menu-image">
-                            <img src="2025素材/パテドカンパーニュ.jpg" alt="カジュアルコース">
-                        </div>
-                        <div class="menu-details">
-                            <h3>カジュアルコース</h3>
-                            <p class="price">2,980円</p>
-                            <p class="description">気軽にお楽しみいただけるリーズナブルなコースです。</p>
-                        </div>
-                    </div>
-                    <div class="menu-card featured">
-                        <div class="menu-image">
-                            <img src="2025素材/国産牛ステーキ.jpg" alt="スタンダードコース">
-                        </div>
-                        <div class="menu-details">
-                            <h3>スタンダードコース</h3>
-                            <p class="price">3,980円</p>
-                            <p class="description">当店一番人気！バランスの取れた満足コース。</p>
+                <div class="row g-4">
+                    <!-- Casual Course -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="2025素材/パテドカンパーニュ.jpg" class="card-img-top" alt="カジュアルコース" style="height: 250px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">カジュアルコース</h5>
+                                <p class="fs-3 fw-bold" style="color: #800020;">2,980円</p>
+                                <p class="card-text text-muted">気軽にお楽しみいただけるリーズナブルなコースです。</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu-card">
-                        <div class="menu-image">
-                            <img src="2025素材/国産牛ステーキ(イチボ).jpg" alt="プレミアムコース">
+                    <!-- Standard Course -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow border-warning border-3">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-50 translate-middle">人気No.1</span>
+                            <img src="2025素材/国産牛ステーキ.jpg" class="card-img-top" alt="スタンダードコース" style="height: 250px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">スタンダードコース</h5>
+                                <p class="fs-3 fw-bold" style="color: #800020;">3,980円</p>
+                                <p class="card-text text-muted">当店一番人気！バランスの取れた満足コース。</p>
+                            </div>
                         </div>
-                        <div class="menu-details">
-                            <h3>プレミアムコース</h3>
-                            <p class="price">5,980円</p>
-                            <p class="description">特別な日に。厳選食材を使用した贅沢なコース。</p>
+                    </div>
+                    <!-- Premium Course -->
+                    <div class="col-lg-4">
+                        <div class="card h-100 shadow">
+                            <img src="2025素材/国産牛ステーキ(イチボ).jpg" class="card-img-top" alt="プレミアムコース" style="height: 250px; object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">プレミアムコース</h5>
+                                <p class="fs-3 fw-bold" style="color: #800020;">5,980円</p>
+                                <p class="card-text text-muted">特別な日に。厳選食材を使用した贅沢なコース。</p>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="section py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h3 style="font-family: 'Playfair Display', serif; color: #800020;">お料理の様子</h3>
+                    <p class="text-muted">シェフが心を込めて作る料理をご覧ください</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <video controls class="w-100 rounded shadow" poster="2025素材/パスタ.jpg">
+                            <source src="2025素材/パスタ.mp4" type="video/mp4">
+                            お使いのブラウザは動画再生に対応していません。
+                        </video>
                     </div>
                 </div>
             </div>
@@ -90,6 +126,8 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
