@@ -13,7 +13,7 @@ function Home() {
           playsInline
           poster="/assets/images/ワインと人気メニュー.jpg"
         >
-          <source src="/assets/images/ワイン.mp4" type="video/mp4" />
+          <source src="/assets/videos/ワイン.mp4" type="video/mp4" />
         </video>
         <div className="hero-overlay"></div>
         <div className="hero-content">

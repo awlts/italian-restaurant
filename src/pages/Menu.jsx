@@ -64,7 +64,7 @@ function Menu() {
           </div>
           <div className="video-wrapper">
             <video controls poster="/assets/images/パスタ.jpg">
-              <source src="/assets/images/パスタ.mp4" type="video/mp4" />
+              <source src="/assets/videos/パスタ.mp4" type="video/mp4" />
               お使いのブラウザは動画再生に対応していません。
             </video>
           </div>
